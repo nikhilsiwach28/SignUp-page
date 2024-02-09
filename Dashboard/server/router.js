@@ -1,4 +1,4 @@
-const handler = require('./handlers')
+const handler = require('../handler/handlers')
 const rateLimit = require('express-rate-limit');
 
 

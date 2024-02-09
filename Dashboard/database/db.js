@@ -1,7 +1,7 @@
 const sqlite3 = require('sqlite3').verbose();
 
-// Connect to SQLite database (or any other database you choose)
-const db = new sqlite3.Database('form_data.db');
+// Connect to SQLite database
+const db = new sqlite3.Database('./database/form_data.db');
 // Create the "user" table if it doesn't exist
 db.serialize(() => {
     db.run(`
